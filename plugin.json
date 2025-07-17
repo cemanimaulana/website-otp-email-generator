@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "title": "OTP Email Generator Theme",
+  "description": "Tema Hugo dengan fitur generator OTP email seperti generator.email. Mendukung email stephaniestudio@motionisme.io untuk menghasilkan kode OTP secara otomatis.",
+  "author": {
+    "name": "Custom Theme Developer",
+    "url": ""
+  },
+  "fields": [
+    {
+      "field": "otp_email",
+      "label": "Email OTP yang Didukung",
+      "type": "text",
+      "default": "stephaniestudio@motionisme.io",
+      "help": "Email yang akan menghasilkan kode OTP ketika dimasukkan"
+    },
+    {
+      "field": "otp_length",
+      "label": "Panjang Kode OTP",
+      "type": "number",
+      "default": 6,
+      "help": "Jumlah digit dalam kode OTP (default: 6)"
+    },
+    {
+      "field": "site_title",
+      "label": "Judul Website",
+      "type": "text",
+      "default": "Generator OTP Email",
+      "help": "Judul yang akan ditampilkan di header website"
+    },
+    {
+      "field": "site_description",
+      "label": "Deskripsi Website",
+      "type": "textarea",
+      "default": "Website untuk menerima dan menampilkan kode OTP email secara otomatis",
+      "help": "Deskripsi singkat tentang website Anda"
+    }
+  ],
+  "categories": ["theme", "utility", "email"],
+  "tags": ["otp", "email", "generator", "verification", "temporary"],
+  "hugo_version": "0.80.0",
+  "license": "MIT",
+  "features": [
+    "OTP Email Generator",
+    "Responsive Design",
+    "Multi-language Support",
+    "Modern UI/UX",
+    "Mobile Friendly"
+  ],
+  "demo_url": "",
+  "source_url": "",
+  "screenshot": "screenshot.png"
+}
