@@ -1,0 +1,61 @@
+OTP Email Generator Theme
+Version: 1.0.0
+Build Date: 2024-12-19
+Hugo Min Version: 0.80.0
+
+CHANGELOG:
+==========
+
+v1.0.0 (2024-12-19)
+- Initial release
+- OTP email generator functionality
+- Support for stephaniestudio@motionisme.io
+- Modern responsive design
+- Multi-language support (Indonesian & English)
+- Mobile-friendly interface
+- Clean typography with Inter font
+- Micro.blog compatibility
+- Hugo theme structure
+- JavaScript-based OTP generation
+- Form validation and error handling
+- Animated UI feedback
+- SEO-friendly markup
+- Accessibility features
+
+FEATURES:
+=========
+✓ OTP Email Generator
+✓ Responsive Design
+✓ Multi-language (ID/EN)
+✓ Modern UI/UX
+✓ Mobile Optimized
+✓ Clean Code Structure
+✓ Easy Customization
+✓ Micro.blog Ready
+✓ Hugo Compatible
+✓ MIT Licensed
+
+REQUIREMENTS:
+=============
+- Hugo 0.80.0 or higher
+- Modern web browser with JavaScript enabled
+- Micro.blog account (for deployment)
+
+INSTALLATION:
+=============
+1. Download all theme files
+2. Upload to micro.blog themes section
+3. Activate theme in blog settings
+4. Access /otp page to use generator
+
+CUSTOMIZATION:
+==============
+- Edit static/js/otp.js to change supported email
+- Modify static/css/main.css for styling changes
+- Update i18n/*.json files for translations
+- Customize layouts/*.html for structure changes
+
+SUPPORT:
+========
+This theme is provided as-is for educational and personal use.
+Feel free to modify according to your needs.
