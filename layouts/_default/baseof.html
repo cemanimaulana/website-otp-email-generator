@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "id" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    
+    <!-- Google Fonts untuk tipografi modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Meta tags -->
+    <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    
+    {{ block "head" . }}{{ end }}
+</head>
+<body>
+    <!-- Header -->
+    {{ partial "header.html" . }}
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    <!-- Footer -->
+    {{ partial "footer.html" . }}
+    
+    <!-- JavaScript -->
+    <script src="/static/js/otp.js"></script>
+    
+    {{ block "scripts" . }}{{ end }}
+</body>
+</html>
