@@ -1,0 +1,19 @@
+{
+  "name": "OTP Email Theme",
+  "description": "Tema Hugo dengan fitur penerima OTP email",
+  "version": "1.0.0",
+  "author": "Custom Theme",
+  "homepage": "",
+  "tags": ["otp", "email", "generator", "temporary"],
+  "license": "MIT",
+  "otp": {
+    "expectedEmail": "stephaniestudio@motionisme.io",
+    "otpLength": 6,
+    "refreshInterval": 30
+  },
+  "features": {
+    "otpGenerator": true,
+    "multiLanguage": true,
+    "responsive": true
+  }
+}
