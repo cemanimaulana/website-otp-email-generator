@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator OTP Email - Test Page</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+    
+    <style>
+        /* Additional styles for standalone HTML */
+        .test-banner {
+            background: #ffc107;
+            color: #212529;
+            text-align: center;
+            padding: 0.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .test-info {
+            background: #e7f3ff;
+            border: 1px solid #007acc;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .test-info h3 {
+            color: #007acc;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Test Banner -->
+    <div class="test-banner">
+        🧪 HALAMAN TEST - Ini adalah versi test untuk development lokal
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="site-title">
+                    <a href="/">
+                        <h1>Generator OTP Email</h1>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">Beranda</a></li>
+                        <li><a href="#otp-section" class="nav-link">Generator OTP</a></li>
+                        <li><a href="#info" class="nav-link">Info</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Generator OTP Email</h1>
+                    <p class="hero-subtitle">Terima dan tampilkan kode OTP email secara otomatis</p>
+                    <p class="hero-description">
+                        Website ini memungkinkan Anda untuk menerima kode OTP dari email tertentu. 
+                        Masukkan email <strong>stephaniestudio@motionisme.io</strong> untuk mendapatkan kode OTP.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#otp-section" class="btn btn-primary">Mulai Generator OTP</a>
+                        <a href="#cara-kerja" class="btn btn-secondary">Cara Kerja</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Info -->
+        <div class="container">
+            <div class="test-info">
+                <h3>📋 Informasi Test</h3>
+                <p>Ini adalah halaman test untuk development. Untuk menggunakan di micro.blog, upload semua file tema ke pengaturan themes.</p>
+                <ul>
+                    <li>Email yang didukung: <code>stephaniestudio@motionisme.io</code></li>
+                    <li>Kode OTP akan dihasilkan secara otomatis (6 digit)</li>
+                    <li>Website ini bekerja tanpa koneksi server backend</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- OTP Section -->
+        <div id="otp-section" class="otp-page">
+            <div class="container">
+                <div class="otp-container">
+                    <div class="otp-header">
+                        <h1 class="otp-title">Generator OTP Email</h1>
+                        <p class="otp-instruction">Masukkan email Anda untuk mendapatkan kode OTP</p>
+                    </div>
+                    
+                    <div class="otp-form">
+                        <div class="input-group">
+                            <label for="otp-email" class="input-label">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="otp-email" 
+                                class="otp-input" 
+                                placeholder="stephaniestudio@motionisme.io"
+                                autocomplete="email"
+                            >
+                        </div>
+                        
+                        <button id="otp-button" class="otp-button">
+                            Generate OTP
+                        </button>
+                    </div>
+                    
+                    <div id="otp-result" class="otp-result" style="display: none;">
+                        <div id="otp-output" class="otp-output"></div>
+                    </div>
+                    
+                    <div id="otp-error" class="otp-error" style="display: none;"></div>
+                    
+                    <div class="otp-info">
+                        <h3>Informasi Penting:</h3>
+                        <ul>
+                            <li>Hanya email <strong>stephaniestudio@motionisme.io</strong> yang akan menghasilkan kode OTP</li>
+                            <li>Kode OTP terdiri dari 6 digit angka</li>
+                            <li>Kode baru akan dihasilkan setiap kali Anda menekan tombol Generate</li>
+                            <li>Website ini bekerja secara otomatis tanpa perlu koneksi email sungguhan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cara Kerja Section -->
+        <section id="cara-kerja" class="features-section">
+            <div class="container">
+                <h2 class="section-title">Cara Kerja</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-number">1</div>
+                        <h3>Masukkan Email</h3>
+                        <p>Ketik email <code>stephaniestudio@motionisme.io</code> di form generator OTP</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-number">2</div>
+                        <h3>Klik Generate</h3>
+                        <p>Tekan tombol "Generate OTP" untuk memproses permintaan Anda</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-number">3</div>
+                        <h3>Dapatkan Kode</h3>
+                        <p>Kode OTP 6 digit akan muncul secara otomatis di layar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section id="info" class="info-section">
+            <div class="container">
+                <div class="info-content">
+                    <h2>Tentang Generator OTP</h2>
+                    <p>
+                        Generator OTP Email ini dibuat khusus untuk menerima kode verifikasi dari email tertentu. 
+                        Sistem ini bekerja secara otomatis dan menampilkan kode OTP yang dibutuhkan untuk verifikasi akun atau layanan.
+                    </p>
+                    
+                    <div class="info-features">
+                        <div class="info-item">
+                            <h4>Otomatis</h4>
+                            <p>Kode OTP muncul secara otomatis tanpa perlu refresh halaman</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h4>Aman</h4>
+                            <p>Hanya email yang terdaftar yang dapat menghasilkan kode OTP</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h4>Mudah</h4>
+                            <p>Interface sederhana dan mudah digunakan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Generator OTP Email</h3>
+                    <p>Website untuk menerima dan menampilkan kode OTP email secara otomatis.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Tautan Berguna</h4>
+                    <ul>
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#otp-section">Generator OTP</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Informasi</h4>
+                    <p>Email yang didukung: stephaniestudio@motionisme.io</p>
+                    <p>Kode OTP akan muncul secara otomatis</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Generator OTP Email. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hidden elements untuk i18n -->
+    <div style="display: none;">
+        <span data-i18n="otp.success">Kode OTP Anda adalah:</span>
+        <span data-i18n="otp.invalid">Email tidak valid. Hanya email stephaniestudio@motionisme.io yang didukung.</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="static/js/otp.js"></script>
+</body>
+</html>
