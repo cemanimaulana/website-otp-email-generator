@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="otp-page">
+    <div class="container">
+        <div class="otp-container">
+            <div class="otp-header">
+                <h1 class="otp-title">{{ i18n "otp.title" | default "Generator OTP Email" }}</h1>
+                <p class="otp-instruction">{{ i18n "otp.instruction" | default "Masukkan email Anda untuk mendapatkan kode OTP" }}</p>
+            </div>
+            
+            <div class="otp-form">
+                <div class="input-group">
+                    <label for="otp-email" class="input-label">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="otp-email" 
+                        class="otp-input" 
+                        placeholder="{{ i18n "otp.emailPlaceholder" | default "stephaniestudio@motionisme.io" }}"
+                        autocomplete="email"
+                    >
+                </div>
+                
+                <button id="otp-button" class="otp-button">
+                    {{ i18n "otp.button" | default "Generate OTP" }}
+                </button>
+            </div>
+            
+            <div id="otp-result" class="otp-result" style="display: none;">
+                <div id="otp-output" class="otp-output"></div>
+            </div>
+            
+            <div id="otp-error" class="otp-error" style="display: none;"></div>
+            
+            <div class="otp-info">
+                <h3>Informasi Penting:</h3>
+                <ul>
+                    <li>Hanya email <strong>stephaniestudio@motionisme.io</strong> yang akan menghasilkan kode OTP</li>
+                    <li>Kode OTP terdiri dari 6 digit angka</li>
+                    <li>Kode baru akan dihasilkan setiap kali Anda menekan tombol Generate</li>
+                    <li>Website ini bekerja secara otomatis tanpa perlu koneksi email sungguhan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hidden elements untuk i18n -->
+<div style="display: none;">
+    <span data-i18n="otp.success">{{ i18n "otp.success" | default "Kode OTP Anda adalah:" }}</span>
+    <span data-i18n="otp.invalid">{{ i18n "otp.invalid" | default "Email tidak valid. Silakan coba lagi." }}</span>
+</div>
+{{ end }}
