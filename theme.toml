@@ -1,0 +1,15 @@
+name = "OTP Email Theme"
+description = "Tema Hugo dengan fitur generator OTP email seperti generator.email"
+homepage = ""
+tags = ["otp", "email", "temporary", "generator"]
+features = ["otp-generator", "responsive", "multilingual"]
+min_version = "0.80.0"
+
+[author]
+  name = "Custom Theme"
+  homepage = ""
+
+[original]
+  name = "OTP Email Generator"
+  homepage = ""
+  repo = ""
